@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Functional_Suite">
+              <span class="suite-name border-failed">Functional_Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Functional_Suite">
+                    <span>C:\Users\arath\eclipse\com.pageobjectmodel\Functional.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Functional_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Functional_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Functional_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Functional_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Functional_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Functional_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 3 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Functional_Suite" class="hide-methods failed suite-Functional_Suite"> (hide)</a> <!-- hide-methods failed suite-Functional_Suite -->
+                      <a href="#" panel-name="suite-Functional_Suite" class="show-methods failed suite-Functional_Suite"> (show)</a> <!-- show-methods failed suite-Functional_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Functional_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Suite" title="com.testngtests.salesforce.loginSalesforceApp" hash-for-method="to_check_LoginSuccessOrNot_WithDataProvider(admin@admin.com, admin)">to_check_LoginSuccessOrNot_WithDataProvider(admin@admin.com, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Suite" title="com.testngtests.salesforce.loginSalesforceApp" hash-for-method="to_check_LoginSuccessOrNot_WithDataProvider(a.gmail.com, a)">to_check_LoginSuccessOrNot_WithDataProvider(a.gmail.com, a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Suite" title="com.testngtests.salesforce.loginSalesforceApp" hash-for-method="to_login_withInvalid_Credentials">to_login_withInvalid_Credentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Functional_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Functional_Suite" class="hide-methods passed suite-Functional_Suite"> (hide)</a> <!-- hide-methods passed suite-Functional_Suite -->
+                      <a href="#" panel-name="suite-Functional_Suite" class="show-methods passed suite-Functional_Suite"> (show)</a> <!-- show-methods passed suite-Functional_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Functional_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Suite" title="com.testngtests.salesforce.loginSalesforceApp" hash-for-method="to_Check_Login_ErrorMessage">to_Check_Login_ErrorMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Suite" title="com.testngtests.salesforce.loginSalesforceApp" hash-for-method="to_Check_Logout_SalesforceApp">to_Check_Logout_SalesforceApp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Suite" title="com.testngtests.salesforce.loginSalesforceApp" hash-for-method="to_Check_RememberMe">to_Check_RememberMe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Suite" title="com.testngtests.salesforce.loginSalesforceApp" hash-for-method="to_Login_WithValid_Credentials">to_Login_WithValid_Credentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Suite" title="com.testngtests.salesforce.loginSalesforceApp" hash-for-method="to_check_LoginSuccessOrNot_WithDataProvider(arathi.ram@salesforce.com, test@123)">to_check_LoginSuccessOrNot_WithDataProvider(arathi.ram@salesforce.com, test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Functional_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Functional_Suite" class="panel Functional_Suite">
+          <div class="suite-Functional_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testngtests.salesforce.loginSalesforceApp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="to_check_LoginSuccessOrNot_WithDataProvider(admin@admin.com, admin)">
+                  </a> <!-- to_check_LoginSuccessOrNot_WithDataProvider(admin@admin.com, admin) -->
+                  <span class="method-name">to_check_LoginSuccessOrNot_WithDataProvider</span>
+                  <span class="parameters">(admin@admin.com, admin)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#userNavButton&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-DQ25KTNT&apos;, ip: &apos;192.168.0.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: be523cf22cbd9a02ead32eb74127aa68
+*** Element info: {Using=id, value=userNavButton}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
+	at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:166)
+	at com.testngtests.salesforce.loginSalesforceApp.to_check_LoginSuccessOrNot_WithDataProvider(loginSalesforceApp.java:70)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="to_check_LoginSuccessOrNot_WithDataProvider(a.gmail.com, a)">
+                  </a> <!-- to_check_LoginSuccessOrNot_WithDataProvider(a.gmail.com, a) -->
+                  <span class="method-name">to_check_LoginSuccessOrNot_WithDataProvider</span>
+                  <span class="parameters">(a.gmail.com, a)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#userNavButton&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-DQ25KTNT&apos;, ip: &apos;192.168.0.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: be523cf22cbd9a02ead32eb74127aa68
+*** Element info: {Using=id, value=userNavButton}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
+	at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:166)
+	at com.testngtests.salesforce.loginSalesforceApp.to_check_LoginSuccessOrNot_WithDataProvider(loginSalesforceApp.java:70)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="to_login_withInvalid_Credentials">
+                  </a> <!-- to_login_withInvalid_Credentials -->
+                  <span class="method-name">to_login_withInvalid_Credentials</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@id=&apos;home_Tab&apos;]//a[contains(text(),&apos;Home&apos;)]&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-DQ25KTNT&apos;, ip: &apos;192.168.0.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: be523cf22cbd9a02ead32eb74127aa68
+*** Element info: {Using=xpath, value=//li[@id=&apos;home_Tab&apos;]//a[contains(text(),&apos;Home&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
+	at com.pageobjects.salesforce.pomloginSalesforceApp.invalidLoginToSalesforceApp(pomloginSalesforceApp.java:117)
+	at com.testngtests.salesforce.loginSalesforceApp.to_login_withInvalid_Credentials(loginSalesforceApp.java:43)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Functional_Suite-class-failed -->
+          <div class="suite-Functional_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testngtests.salesforce.loginSalesforceApp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="to_Check_Login_ErrorMessage">
+                  </a> <!-- to_Check_Login_ErrorMessage -->
+                  <span class="method-name">to_Check_Login_ErrorMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="to_Check_Logout_SalesforceApp">
+                  </a> <!-- to_Check_Logout_SalesforceApp -->
+                  <span class="method-name">to_Check_Logout_SalesforceApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="to_Check_RememberMe">
+                  </a> <!-- to_Check_RememberMe -->
+                  <span class="method-name">to_Check_RememberMe</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="to_Login_WithValid_Credentials">
+                  </a> <!-- to_Login_WithValid_Credentials -->
+                  <span class="method-name">to_Login_WithValid_Credentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="to_check_LoginSuccessOrNot_WithDataProvider(arathi.ram@salesforce.com, test@123)">
+                  </a> <!-- to_check_LoginSuccessOrNot_WithDataProvider(arathi.ram@salesforce.com, test@123) -->
+                  <span class="method-name">to_check_LoginSuccessOrNot_WithDataProvider</span>
+                  <span class="parameters">(arathi.ram@salesforce.com, test@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Functional_Suite-class-passed -->
+        </div> <!-- panel Functional_Suite -->
+        <div panel-name="test-xml-Functional_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\arath\eclipse\com.pageobjectmodel\Functional.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Functional_Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SalesforceApplication_LoginTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testngtests.salesforce.loginSalesforceApp&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SalesforceApplication_LoginTest --&gt;
+&lt;/suite&gt; &lt;!-- Functional_Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Functional_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Functional_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SalesforceApplication_LoginTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Functional_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Functional_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Functional_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Functional_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Functional_Suite');
+function tableData_Functional_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'to_Login_WithValid_Credentials')
+data.setCell(0, 2, 'com.testngtests.salesforce.loginSalesforceApp')
+data.setCell(0, 3, 17996);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'to_check_LoginSuccessOrNot_WithDataProvider')
+data.setCell(1, 2, 'com.testngtests.salesforce.loginSalesforceApp')
+data.setCell(1, 3, 4449);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'to_login_withInvalid_Credentials')
+data.setCell(2, 2, 'com.testngtests.salesforce.loginSalesforceApp')
+data.setCell(2, 3, 3763);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'to_Check_Logout_SalesforceApp')
+data.setCell(3, 2, 'com.testngtests.salesforce.loginSalesforceApp')
+data.setCell(3, 3, 2675);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'to_Check_Login_ErrorMessage')
+data.setCell(4, 2, 'com.testngtests.salesforce.loginSalesforceApp')
+data.setCell(4, 3, 1192);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'to_check_LoginSuccessOrNot_WithDataProvider')
+data.setCell(5, 2, 'com.testngtests.salesforce.loginSalesforceApp')
+data.setCell(5, 3, 817);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'to_check_LoginSuccessOrNot_WithDataProvider')
+data.setCell(6, 2, 'com.testngtests.salesforce.loginSalesforceApp')
+data.setCell(6, 3, 671);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'to_Check_RememberMe')
+data.setCell(7, 2, 'com.testngtests.salesforce.loginSalesforceApp')
+data.setCell(7, 3, 332);
+window.suiteTableData['Functional_Suite']= { tableData: data, tableDiv: 'times-div-Functional_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <div id="times-div-Functional_Suite">
+              </div> <!-- times-div-Functional_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Functional_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Functional_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Functional_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Functional_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testngtests.salesforce.loginSalesforceApp</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">TriggeringAllDependencies</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">settingupURL</span>
+                <span class="method-start">7098 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">to_login_withInvalid_Credentials</span>
+                <span class="method-start">8863 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">settingReqURL</span>
+                <span class="method-start">13039 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">to_Login_WithValid_Credentials</span>
+                <span class="method-start">13041 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">settingReqURL</span>
+                <span class="method-start">33241 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">to_Check_Logout_SalesforceApp</span>
+                <span class="method-start">33242 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">settingReqURL</span>
+                <span class="method-start">36347 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">to_Check_RememberMe</span>
+                <span class="method-start">36348 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">settingReqURL</span>
+                <span class="method-start">37100 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">to_Check_Login_ErrorMessage</span>
+                <span class="method-start">37100 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">settingReqURL</span>
+                <span class="method-start">38676 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">to_check_LoginSuccessOrNot_WithDataProvider(arathi.ram@salesforce.com, test@123)</span>
+                <span class="method-start">38679 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">settingReqURL</span>
+                <span class="method-start">43496 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">to_check_LoginSuccessOrNot_WithDataProvider(admin@admin.com, admin)</span>
+                <span class="method-start">43497 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">settingReqURL</span>
+                <span class="method-start">44755 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">to_check_LoginSuccessOrNot_WithDataProvider(a.gmail.com, a)</span>
+                <span class="method-start">44756 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">settingReqURL</span>
+                <span class="method-start">45805 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">TearDownAllDepencies</span>
+                <span class="method-start">46093 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

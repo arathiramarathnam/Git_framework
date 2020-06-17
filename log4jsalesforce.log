@@ -1,0 +1,84 @@
+2020-06-17 00:41:00 INFO  com.utilities.base.TestBase 26 - Config Properties File path: C:\Users\arath\eclipse\com.pageobjectmodel\src\main\resources\properties\conf.properties
+2020-06-17 00:41:05 INFO  com.utilities.base.TestBase 58 - launched the browser ch
+2020-06-17 00:41:07 INFO  com.utilities.base.TestBase 10 - Test Data Properties File path: C:\Users\arath\eclipse\com.pageobjectmodel\src\main\resources\properties\testdata.properties
+2020-06-17 00:41:08 INFO  com.utilities.base.TestBase 74 - Launching the AppURL https://login.salesforce.com/
+2020-06-17 00:41:09 INFO  loginSalesforceApp 24 - launched saleforceAPP URL successfuly
+2020-06-17 00:41:10 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: logo]
+2020-06-17 00:41:10 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: username]
+2020-06-17 00:41:10 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:10 INFO  pomloginSalesforceApp 104 - Input is invalid username and password on login page
+2020-06-17 00:41:11 INFO  com.utilities.base.TestBase 171 - Element is displayed and perform click... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: Login]
+2020-06-17 00:41:12 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: error]
+2020-06-17 00:41:12 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: error]
+2020-06-17 00:41:12 INFO  pomloginSalesforceApp 113 - Gives Login Error Message for invalid credentialsPlease check your username and password. If you still can't log in, contact your Salesforce administrator.
+2020-06-17 00:41:13 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: logo]
+2020-06-17 00:41:13 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: username]
+2020-06-17 00:41:13 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:13 INFO  com.utilities.base.TestBase 130 - Element is selected.... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: rememberUn]
+2020-06-17 00:41:24 INFO  com.utilities.base.TestBase 171 - Element is displayed and perform click... Proxy element for: DefaultElementLocator 'By.id: Login'
+2020-06-17 00:41:24 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: userNavLabel]
+2020-06-17 00:41:24 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //li[@id='home_Tab']//a[contains(text(),'Home')]]
+2020-06-17 00:41:24 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //li[@id='home_Tab']//a[contains(text(),'Home')]]
+2020-06-17 00:41:30 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //li[@id='home_Tab']//a[contains(text(),'Home')]]
+2020-06-17 00:41:30 INFO  pomloginSalesforceApp 53 - LogIn into Salesforce App successtrue
+2020-06-17 00:41:33 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: userNavButton]
+2020-06-17 00:41:34 INFO  com.utilities.base.TestBase 215 - element is displayed to mouseover and click [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: userNavButton]
+2020-06-17 00:41:34 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //a[contains(text(),'Logout')]]
+2020-06-17 00:41:34 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //a[contains(text(),'Logout')]]
+2020-06-17 00:41:34 INFO  com.utilities.base.TestBase 171 - Element is displayed and perform click... Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(text(),'Logout')]'
+2020-06-17 00:41:34 INFO  pomloginSalesforceApp 139 - Logout of Salesforce App success
+2020-06-17 00:41:35 INFO  com.utilities.base.TestBase 82 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:35 INFO  com.utilities.base.TestBase 82 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: idcard-identity]
+2020-06-17 00:41:35 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:35 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:35 INFO  pomloginSalesforceApp 147 - password field is ready for input: true
+2020-06-17 00:41:35 INFO  com.utilities.base.TestBase 139 - Element is enabled for input [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: idcard-identity]
+2020-06-17 00:41:35 INFO  pomloginSalesforceApp 150 - username field is auto-populated with : arathi.ram@salesforce.com
+2020-06-17 00:41:35 INFO  com.utilities.base.TestBase 171 - Element is displayed and perform click... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //a[@id='clear_link']]
+2020-06-17 00:41:36 INFO  com.utilities.base.TestBase 139 - Element is enabled for input [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: username]
+2020-06-17 00:41:36 INFO  pomloginSalesforceApp 153 - username field is ready for input: true
+2020-06-17 00:41:36 INFO  com.utilities.base.TestBase 139 - Element is enabled for input [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: username]
+2020-06-17 00:41:36 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:36 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:36 INFO  loginSalesforceApp 59 - username and password fields are ready for input after logout: true
+2020-06-17 00:41:36 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:36 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: username]
+2020-06-17 00:41:36 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: rememberUn]
+2020-06-17 00:41:36 INFO  com.utilities.base.TestBase 125 - Element is selected already [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: rememberUn]
+2020-06-17 00:41:36 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: rememberUn]
+2020-06-17 00:41:36 INFO  pomloginSalesforceApp 65 - Remember Me is selected for this user nametrue
+2020-06-17 00:41:36 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: rememberUn]
+2020-06-17 00:41:37 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: logo]
+2020-06-17 00:41:37 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: username]
+2020-06-17 00:41:37 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:37 INFO  com.utilities.base.TestBase 125 - Element is selected already [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: rememberUn]
+2020-06-17 00:41:37 INFO  pomloginSalesforceApp 86 - password input is empty on login page after clear
+2020-06-17 00:41:38 INFO  com.utilities.base.TestBase 171 - Element is displayed and perform click... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: Login]
+2020-06-17 00:41:38 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: error]
+2020-06-17 00:41:38 INFO  pomloginSalesforceApp 93 - Gives valid Login Error Message Please enter your password.
+2020-06-17 00:41:39 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: logo]
+2020-06-17 00:41:39 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: username]
+2020-06-17 00:41:39 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:39 INFO  com.utilities.base.TestBase 125 - Element is selected already [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: rememberUn]
+2020-06-17 00:41:41 INFO  com.utilities.base.TestBase 171 - Element is displayed and perform click... Proxy element for: DefaultElementLocator 'By.id: Login'
+2020-06-17 00:41:41 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: userNavButton]
+2020-06-17 00:41:41 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //li[@id='home_Tab']//a[contains(text(),'Home')]]
+2020-06-17 00:41:41 INFO  com.utilities.base.TestBase 112 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //li[@id='home_Tab']//a[contains(text(),'Home')]]
+2020-06-17 00:41:41 INFO  pomloginSalesforceApp 168 - LogIn into Salesforce App successtrue
+2020-06-17 00:41:41 INFO  com.utilities.base.TestBase 82 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: userNavButton]
+2020-06-17 00:41:41 INFO  com.utilities.base.TestBase 215 - element is displayed to mouseover and click [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: userNavButton]
+2020-06-17 00:41:41 INFO  com.utilities.base.TestBase 82 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //a[contains(text(),'Logout')]]
+2020-06-17 00:41:42 INFO  com.utilities.base.TestBase 171 - Element is displayed and perform click... Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(text(),'Logout')]'
+2020-06-17 00:41:43 INFO  com.utilities.base.TestBase 82 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //a[@id='clear_link']]
+2020-06-17 00:41:43 INFO  com.utilities.base.TestBase 171 - Element is displayed and perform click... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> xpath: //a[@id='clear_link']]
+2020-06-17 00:41:43 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: logo]
+2020-06-17 00:41:44 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: username]
+2020-06-17 00:41:44 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:44 INFO  com.utilities.base.TestBase 125 - Element is selected already [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: rememberUn]
+2020-06-17 00:41:44 INFO  com.utilities.base.TestBase 171 - Element is displayed and perform click... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: Login]
+2020-06-17 00:41:45 INFO  com.utilities.base.TestBase 93 - Element is displayed [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: logo]
+2020-06-17 00:41:45 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: username]
+2020-06-17 00:41:45 INFO  com.utilities.base.TestBase 164 - passing value to element parameters... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: password]
+2020-06-17 00:41:45 INFO  com.utilities.base.TestBase 125 - Element is selected already [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: rememberUn]
+2020-06-17 00:41:45 INFO  com.utilities.base.TestBase 171 - Element is displayed and perform click... [[ChromeDriver: chrome on WINDOWS (be523cf22cbd9a02ead32eb74127aa68)] -> id: Login]
+2020-06-17 00:41:48 INFO  com.utilities.base.TestBase 76 - Quit all instances of the browser C:\Users\arath\eclipse\com.pageobjectmodel\src\main\resources\properties\conf.properties

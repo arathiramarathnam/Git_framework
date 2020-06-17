@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Functional_Suite]">
+  <test thread-count="5" name="SalesforceApplication_LoginTest(failed)">
+    <classes>
+      <class name="com.testngtests.salesforce.loginSalesforceApp">
+        <methods>
+          <include name="settingupURL"/>
+          <include name="to_check_LoginSuccessOrNot_WithDataProvider" invocation-numbers="1 2"/>
+          <include name="TearDownAllDepencies"/>
+          <include name="to_login_withInvalid_Credentials"/>
+          <include name="TriggeringAllDependencies"/>
+          <include name="settingReqURL"/>
+        </methods>
+      </class> <!-- com.testngtests.salesforce.loginSalesforceApp -->
+    </classes>
+  </test> <!-- SalesforceApplication_LoginTest(failed) -->
+</suite> <!-- Failed suite [Functional_Suite] -->
