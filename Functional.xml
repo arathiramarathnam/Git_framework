@@ -3,7 +3,16 @@
 <suite name="Functional_Suite">
   <test name="SalesforceApplication_LoginTest">
     <classes>
-      <class name="com.testngtests.salesforce.loginSalesforceApp"/>
+      <class name="com.testngtests.salesforce.loginSalesforceApp">
+        	 <methods> <!--  test methods -->
+  	  		<include name="to_login_withInvalid_Credentials"/>
+  	  		<include name="to_Login_WithValid_Credentials"/>
+  	  		<include name="to_Check_Logout_SalesforceApp"/>
+  	  		<include name="to_Check_RememberMe"/>
+  	  		<include name="to_Check_Login_ErrorMessage"/>
+  	  		<include name="to_check_LoginSuccessOrNot_WithDataProvider"/>
+  	  		</methods>
+      </class> <!--class  -->      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

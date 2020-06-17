@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="3" ignored="0" total="8" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Functional_Suite" duration-ms="38710" started-at="2020-06-17T06:41:07Z" finished-at="2020-06-17T06:41:46Z">
+  <suite name="Functional_Suite" duration-ms="30338" started-at="2020-06-17T23:00:48Z" finished-at="2020-06-17T23:01:19Z">
     <groups>
     </groups>
-    <test name="SalesforceApplication_LoginTest" duration-ms="38710" started-at="2020-06-17T06:41:07Z" finished-at="2020-06-17T06:41:46Z">
+    <test name="SalesforceApplication_LoginTest" duration-ms="30338" started-at="2020-06-17T23:00:48Z" finished-at="2020-06-17T23:01:19Z">
       <class name="com.testngtests.salesforce.loginSalesforceApp">
-        <test-method status="PASS" signature="TriggeringAllDependencies()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="TriggeringAllDependencies" is-config="true" duration-ms="7096" started-at="2020-06-17T06:41:00Z" finished-at="2020-06-17T06:41:07Z">
+        <test-method status="PASS" signature="TriggeringAllDependencies()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="TriggeringAllDependencies" is-config="true" duration-ms="8407" started-at="2020-06-17T23:00:40Z" finished-at="2020-06-17T23:00:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TriggeringAllDependencies -->
-        <test-method status="PASS" signature="settingupURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="settingupURL" is-config="true" duration-ms="1717" started-at="2020-06-17T06:41:07Z" finished-at="2020-06-17T06:41:09Z">
+        <test-method status="PASS" signature="settingupURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="settingupURL" is-config="true" duration-ms="1835" started-at="2020-06-17T23:00:48Z" finished-at="2020-06-17T23:00:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingupURL -->
-        <test-method status="FAIL" signature="to_login_withInvalid_Credentials()[pri:1, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="to_login_withInvalid_Credentials" duration-ms="3763" started-at="2020-06-17T06:41:09Z" finished-at="2020-06-17T06:41:12Z">
+        <test-method status="FAIL" signature="to_login_withInvalid_Credentials()[pri:1, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="to_login_withInvalid_Credentials" duration-ms="2641" started-at="2020-06-17T23:00:50Z" finished-at="2020-06-17T23:00:53Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id='home_Tab']//a[contains(text(),'Home')]"}
@@ -24,8 +24,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-DQ25KTNT', ip: '192.168.0.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=xpath, value=//li[@id='home_Tab']//a[contains(text(),'Home')]}]]>
             </message>
             <full-stacktrace>
@@ -35,8 +35,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-DQ25KTNT', ip: '192.168.0.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=xpath, value=//li[@id='home_Tab']//a[contains(text(),'Home')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -55,12 +55,10 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:95)
+at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:1)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
+at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:93)
 at com.pageobjects.salesforce.pomloginSalesforceApp.invalidLoginToSalesforceApp(pomloginSalesforceApp.java:117)
 at com.testngtests.salesforce.loginSalesforceApp.to_login_withInvalid_Credentials(loginSalesforceApp.java:43)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -94,43 +92,43 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- to_login_withInvalid_Credentials -->
-        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T06:41:13Z" finished-at="2020-06-17T06:41:13Z">
+        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T23:00:53Z" finished-at="2020-06-17T23:00:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingReqURL -->
-        <test-method status="PASS" signature="to_Login_WithValid_Credentials()[pri:2, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="to_Login_WithValid_Credentials" duration-ms="17996" started-at="2020-06-17T06:41:13Z" finished-at="2020-06-17T06:41:31Z">
+        <test-method status="PASS" signature="to_Login_WithValid_Credentials()[pri:2, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="to_Login_WithValid_Credentials" duration-ms="4420" started-at="2020-06-17T23:00:53Z" finished-at="2020-06-17T23:00:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- to_Login_WithValid_Credentials -->
-        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T06:41:33Z" finished-at="2020-06-17T06:41:33Z">
+        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="settingReqURL" is-config="true" duration-ms="1" started-at="2020-06-17T23:00:58Z" finished-at="2020-06-17T23:00:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingReqURL -->
-        <test-method status="PASS" signature="to_Check_Logout_SalesforceApp()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="to_Check_Logout_SalesforceApp" duration-ms="2675" started-at="2020-06-17T06:41:33Z" depends-on-methods="com.testngtests.salesforce.loginSalesforceApp.to_Login_WithValid_Credentials" finished-at="2020-06-17T06:41:36Z">
+        <test-method status="PASS" signature="to_Check_Logout_SalesforceApp()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="to_Check_Logout_SalesforceApp" duration-ms="3775" started-at="2020-06-17T23:00:58Z" depends-on-methods="com.testngtests.salesforce.loginSalesforceApp.to_Login_WithValid_Credentials" finished-at="2020-06-17T23:01:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- to_Check_Logout_SalesforceApp -->
-        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T06:41:36Z" finished-at="2020-06-17T06:41:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- settingReqURL -->
-        <test-method status="PASS" signature="to_Check_RememberMe()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="to_Check_RememberMe" duration-ms="332" started-at="2020-06-17T06:41:36Z" depends-on-methods="com.testngtests.salesforce.loginSalesforceApp.to_Check_Logout_SalesforceApp" finished-at="2020-06-17T06:41:36Z">
+        <test-method status="PASS" signature="to_Check_RememberMe()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="to_Check_RememberMe" duration-ms="617" started-at="2020-06-17T23:01:02Z" depends-on-methods="com.testngtests.salesforce.loginSalesforceApp.to_Check_Logout_SalesforceApp" finished-at="2020-06-17T23:01:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- to_Check_RememberMe -->
-        <test-method status="PASS" signature="to_Check_Login_ErrorMessage()[pri:3, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="to_Check_Login_ErrorMessage" duration-ms="1192" started-at="2020-06-17T06:41:37Z" finished-at="2020-06-17T06:41:38Z">
+        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T23:01:02Z" finished-at="2020-06-17T23:01:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingReqURL -->
+        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T23:01:03Z" finished-at="2020-06-17T23:01:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingReqURL -->
+        <test-method status="PASS" signature="to_Check_Login_ErrorMessage()[pri:3, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="to_Check_Login_ErrorMessage" duration-ms="2247" started-at="2020-06-17T23:01:03Z" finished-at="2020-06-17T23:01:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- to_Check_Login_ErrorMessage -->
-        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T06:41:37Z" finished-at="2020-06-17T06:41:37Z">
+        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T23:01:06Z" finished-at="2020-06-17T23:01:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingReqURL -->
-        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T06:41:38Z" finished-at="2020-06-17T06:41:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- settingReqURL -->
-        <test-method status="PASS" signature="to_check_LoginSuccessOrNot_WithDataProvider(java.lang.String, java.lang.String)[pri:4, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="to_check_LoginSuccessOrNot_WithDataProvider" duration-ms="4449" started-at="2020-06-17T06:41:38Z" data-provider="sUsernameandsPassword" finished-at="2020-06-17T06:41:43Z">
+        <test-method status="PASS" signature="to_check_LoginSuccessOrNot_WithDataProvider(java.lang.String, java.lang.String)[pri:4, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="to_check_LoginSuccessOrNot_WithDataProvider" duration-ms="6812" started-at="2020-06-17T23:01:06Z" data-provider="sUsernameandsPassword" finished-at="2020-06-17T23:01:13Z">
           <params>
             <param index="0">
               <value>
@@ -146,11 +144,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- to_check_LoginSuccessOrNot_WithDataProvider -->
-        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="settingReqURL" is-config="true" duration-ms="1" started-at="2020-06-17T06:41:43Z" finished-at="2020-06-17T06:41:43Z">
+        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T23:01:15Z" finished-at="2020-06-17T23:01:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingReqURL -->
-        <test-method status="FAIL" signature="to_check_LoginSuccessOrNot_WithDataProvider(java.lang.String, java.lang.String)[pri:4, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="to_check_LoginSuccessOrNot_WithDataProvider" duration-ms="817" started-at="2020-06-17T06:41:43Z" data-provider="sUsernameandsPassword" finished-at="2020-06-17T06:41:44Z">
+        <test-method status="FAIL" signature="to_check_LoginSuccessOrNot_WithDataProvider(java.lang.String, java.lang.String)[pri:4, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="to_check_LoginSuccessOrNot_WithDataProvider" duration-ms="2133" started-at="2020-06-17T23:01:15Z" data-provider="sUsernameandsPassword" finished-at="2020-06-17T23:01:17Z">
           <params>
             <param index="0">
               <value>
@@ -171,8 +169,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-DQ25KTNT', ip: '192.168.0.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=id, value=userNavButton}]]>
             </message>
             <full-stacktrace>
@@ -182,8 +180,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-DQ25KTNT', ip: '192.168.0.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=id, value=userNavButton}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -202,13 +200,11 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:95)
+at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:1)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
-at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:166)
+at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:93)
+at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:164)
 at com.testngtests.salesforce.loginSalesforceApp.to_check_LoginSuccessOrNot_WithDataProvider(loginSalesforceApp.java:70)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -241,11 +237,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- to_check_LoginSuccessOrNot_WithDataProvider -->
-        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="settingReqURL" is-config="true" duration-ms="1" started-at="2020-06-17T06:41:45Z" finished-at="2020-06-17T06:41:45Z">
+        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T23:01:17Z" finished-at="2020-06-17T23:01:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingReqURL -->
-        <test-method status="FAIL" signature="to_check_LoginSuccessOrNot_WithDataProvider(java.lang.String, java.lang.String)[pri:4, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="to_check_LoginSuccessOrNot_WithDataProvider" duration-ms="671" started-at="2020-06-17T06:41:45Z" data-provider="sUsernameandsPassword" finished-at="2020-06-17T06:41:45Z">
+        <test-method status="FAIL" signature="to_check_LoginSuccessOrNot_WithDataProvider(java.lang.String, java.lang.String)[pri:4, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="to_check_LoginSuccessOrNot_WithDataProvider" duration-ms="1093" started-at="2020-06-17T23:01:17Z" data-provider="sUsernameandsPassword" finished-at="2020-06-17T23:01:18Z">
           <params>
             <param index="0">
               <value>
@@ -266,8 +262,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-DQ25KTNT', ip: '192.168.0.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=id, value=userNavButton}]]>
             </message>
             <full-stacktrace>
@@ -277,8 +273,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-DQ25KTNT', ip: '192.168.0.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=id, value=userNavButton}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -297,13 +293,11 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:95)
+at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:1)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
-at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:166)
+at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:93)
+at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:164)
 at com.testngtests.salesforce.loginSalesforceApp.to_check_LoginSuccessOrNot_WithDataProvider(loginSalesforceApp.java:70)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -336,11 +330,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- to_check_LoginSuccessOrNot_WithDataProvider -->
-        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="settingReqURL" is-config="true" duration-ms="1" started-at="2020-06-17T06:41:46Z" finished-at="2020-06-17T06:41:46Z">
+        <test-method status="PASS" signature="settingReqURL()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="settingReqURL" is-config="true" duration-ms="0" started-at="2020-06-17T23:01:19Z" finished-at="2020-06-17T23:01:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingReqURL -->
-        <test-method status="PASS" signature="TearDownAllDepencies()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@71318ec4]" name="TearDownAllDepencies" is-config="true" duration-ms="2004" started-at="2020-06-17T06:41:46Z" finished-at="2020-06-17T06:41:48Z">
+        <test-method status="PASS" signature="TearDownAllDepencies()[pri:0, instance:com.testngtests.salesforce.loginSalesforceApp@31610302]" name="TearDownAllDepencies" is-config="true" duration-ms="812" started-at="2020-06-17T23:01:19Z" finished-at="2020-06-17T23:01:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownAllDepencies -->

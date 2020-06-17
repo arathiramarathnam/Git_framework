@@ -27,7 +27,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-
+import com.google.common.base.Function;
 import com.relevantcodes.extentreports.LogStatus;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -76,7 +76,7 @@ public class BrowserUtilities {
 	}
 		
 	public void waitForPageElementToVisible(WebDriver driver, WebElement eleToWait) throws Exception{
-		WebDriverWait wait = new WebDriverWait(TestBase.browserdriver, 40);
+		WebDriverWait wait = new WebDriverWait(TestBase.browserdriver, 50);
 		wait.until(ExpectedConditions.visibilityOf(eleToWait));
 		if(eleToWait.isDisplayed()){
 			TestBase.log.info("Element is displayed " + eleToWait);
@@ -84,16 +84,24 @@ public class BrowserUtilities {
 			TestBase.log.info("Element is still displaying.... " + eleToWait);
 		}
 	}
-	
-	public void waitForPageElementToVisibleWithPollingTime(WebDriver driver, WebElement eleToWait, int iTimeInSeconds) throws Exception{
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(TestBase.browserdriver).pollingEvery(Duration.ofMillis(500))
-								.withTimeout(Duration.ofSeconds(iTimeInSeconds)).ignoring(NoSuchElementException.class);
-		wait.until(ExpectedConditions.visibilityOf(eleToWait));
-		if (eleToWait.isDisplayed()) {
+	@SuppressWarnings("deprecation")
+	public boolean waitForPageElementToVisibleWithPollingTime(WebDriver driver, WebElement eleToWait, int iTimeInSeconds) throws Exception {
+		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(TestBase.browserdriver)
+				.withTimeout(iTimeInSeconds, TimeUnit.SECONDS)
+				.pollingEvery(500, TimeUnit.MILLISECONDS)
+				.ignoring(NoSuchElementException.class);
+		wait.until(new Function<WebDriver, WebElement>(){
+		public WebElement apply(WebDriver driver) {
+			if (eleToWait.isDisplayed()) {
 			TestBase.log.info("Element is displayed " + eleToWait);
-		} else {
-			TestBase.log.info("Element is still displaying.... " + eleToWait);
+			return eleToWait;
+			} else {
+			TestBase.log.info("Element is NOT displaying.... " + eleToWait);
+			return null;
+			}
 		}
+		});
+		return !eleToWait.isDisplayed();
 	}
 	
 	public void standardWaitForAllPageElementsToVisible(WebDriver driver, WebElement eleToWait) throws Exception{
@@ -123,8 +131,7 @@ public class BrowserUtilities {
 		if(ele.isSelected()){
 			bisSelectflag=true;
 			TestBase.log.info("Element is selected already " + ele);
-			
-		}else {
+			}else {
 			ele.click();
 			bisSelectflag=true;
 			TestBase.log.info("Element is selected.... " + ele);
@@ -174,12 +181,12 @@ public class BrowserUtilities {
 		}
 	}
 	
-//	public String ufgetText(WebElement ele, String stext) throws Exception{
+//	public String ufgetText(WebElement ele, String stext, String sExpectedtext) throws Exception{
 //		stext=ele.getText();
-//		if(ele.getText().trim().equalsIgnoreCase(stext) || ele.getText().trim().contains(stext)) {
-//			TestBase.log.info("TestCase Pass: expected text is displayed for the element... " + ele.getText());
+//		if(ele.getText().trim().equalsIgnoreCase(sExpectedtext) || ele.getText().trim().contains(sExpectedtext)) {
+//			TestBase.log.info("expected text is displayed for the element... " + ele.getText());
 //			}else {
-//			TestBase.log.info("TestCase Fail: expected text is not displayed for the element... " + ele.getText());
+//			TestBase.log.info("expected text is not displayed for the element... " + ele.getText());
 //			}
 //		return ele.getText();
 //		}
@@ -188,9 +195,11 @@ public class BrowserUtilities {
 		return ele.getText();
 		}
 	
-	public String ufgetTitle(WebElement ele, String sName) throws Exception{
-		return ele.getAttribute(sName);
+	
+	public String ufgetAttributeValue(WebElement ele, String attribute) throws Exception{
+		return ele.getAttribute(attribute);
 		}
+	
 	public void ufelementClear(WebElement ele) throws Exception{
 		ele.clear();
 		}
@@ -230,7 +239,7 @@ public class BrowserUtilities {
 	
 	public String ufTakeImage(WebDriver driver, String sDestFilePath, String sclassName) throws IOException{
 		String timestamp=ufGetTimeStamp();
-		String simagesDir="//screeenshots//";
+		String simagesDir="/screeenshots/";
 		TakesScreenshot srcShot=(TakesScreenshot) driver;
 		File srcfileObj= srcShot.getScreenshotAs(OutputType.FILE);
 		sDestFilePath=System.getProperty("user.dir")+ simagesDir;
@@ -240,6 +249,19 @@ public class BrowserUtilities {
 		FileUtils.copyFile(srcfileObj, DestFileObj);
 		return sDestFilePath;
 		}
+	public void ufScreenShotBrowserforWebElement(WebDriver driver, String classname) throws Exception {
+		String destDir= "/screenshots/";
+		TakesScreenshot srcshot =((TakesScreenshot) TestBase.browserdriver);
+		File srcFile=srcshot.getScreenshotAs(OutputType.FILE);
+		String destFile=classname + ".png";
+		String sPathImage = System.getProperty("user.dir") + destDir + destFile;
+		File destinationFile =new File(sPathImage);
+		try {
+			FileUtils.copyFile(srcFile, destinationFile);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	//select the dropdown using "select by visible text", so pass VisibleText as 'Yellow' to function
 	public void ufselectByVisibleText(WebElement WE, String VisibleText){
 		Select selObj=new Select(WE);

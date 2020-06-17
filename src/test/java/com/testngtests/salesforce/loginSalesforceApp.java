@@ -77,6 +77,7 @@ public void to_check_LoginSuccessOrNot_WithDataProvider(String sUsername, String
 public Object[][] getdatasUsernameAndsPassword()	{
 	Object data[][]=new Object[3][3];
 		return new Object[][] {{"arathi.ram@salesforce.com", "test@123"},{"admin@admin.com","admin"},{"a.gmail.com","a"}};
+	//return new Object[][] {{"arathi.ram@salesforce.com", "test@123"}};
 	
 }
 

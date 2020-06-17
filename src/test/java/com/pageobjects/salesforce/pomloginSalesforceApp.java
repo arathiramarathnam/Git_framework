@@ -125,7 +125,7 @@ public class pomloginSalesforceApp extends TestBase{
 	WebElement button_logout;
 	@FindBy(id="idcard-identity")
 	WebElement idcard_username;
-	@FindBy(xpath="//a[@id='clear_link']")
+	@FindBy(id="clear_link")
 	WebElement clearlink_username;
 	public boolean verifyLoggedIntoSalesforceAppOrElseLogout() throws Exception {
 		/*browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, link_Editlist, 30);
@@ -133,7 +133,7 @@ public class pomloginSalesforceApp extends TestBase{
 		browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, button_UserNav, 30);
 		browserUtil.MouseOverClick(button_UserNav);
 		boolean blogoutFlag=false;
-		browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, button_logout, 20);
+		browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, button_logout, 30);
 		if (browserUtil.isDisplayed(button_logout)) {
 			browserUtil.ufClick(button_logout);
 			log.info("Logout of Salesforce App success");
@@ -141,8 +141,6 @@ public class pomloginSalesforceApp extends TestBase{
 		} 
 		browserUtil.waitForPageElementToVisible(browserdriver, po_password);
 		browserUtil.waitForPageElementToVisible(browserdriver, idcard_username);
-		//browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, po_password, 40);
-		//browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, po_username, 40);
 		if (browserUtil.isDisplayed(po_password)) {
 			log.info("password field is ready for input: " +browserUtil.isDisplayed(po_password));
 		}
@@ -154,22 +152,22 @@ public class pomloginSalesforceApp extends TestBase{
 		return blogoutFlag;
 	}
 	
-	public boolean checkLoginSucessOrNot(String susername, String spassword) throws Exception{
+	public boolean checkLoginSucessOrNot(String sUsername, String sPassword) throws Exception{
 		boolean bloginFlag=false;
 		browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, po_logo, 40);
 		browserUtil.ufelementClear(po_username);
-		browserUtil.ufsendKeys(po_username, susername, "Username");
+		browserUtil.ufsendKeys(po_username, sUsername, "Username");
 		browserUtil.ufelementClear(po_password);
-		browserUtil.ufsendKeys(po_password, spassword, "Password");
+		browserUtil.ufsendKeys(po_password, sPassword, "Password");
 		browserUtil.isSelected(po_Rememberme);
 		browserUtil.ufClick(button_login);
-		browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, button_UserNav, 40);
+		browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, button_UserNav, 30);
 		if (browserUtil.isDisplayed(tab_home)) {
 			log.info("LogIn into Salesforce App success" +browserUtil.isDisplayed(tab_home));
 			bloginFlag=true;
-			browserUtil.waitForPageElementToVisible(browserdriver, button_UserNav);
+			browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, button_UserNav, 30);
 			browserUtil.MouseOverClick(button_UserNav);
-			browserUtil.waitForPageElementToVisible(browserdriver, button_logout);
+			browserUtil.waitForPageElementToVisibleWithPollingTime(browserdriver, button_logout, 30);
 			browserUtil.ufClick(button_logout);
 			browserUtil.waitForPageElementToVisible(browserdriver, clearlink_username);
 			browserUtil.ufClick(clearlink_username);

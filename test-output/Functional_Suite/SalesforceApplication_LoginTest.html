@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 17 00:41:07 MDT 2020</td>
+<td>Started on:</td><td>Wed Jun 17 17:00:48 MDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38710 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30338 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -82,8 +82,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-DQ25KTNT&apos;, ip: &apos;192.168.0.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=id, value=userNavButton}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -98,23 +98,21 @@ Session ID: be523cf22cbd9a02ead32eb74127aa68
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:95)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
-	at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:166)
+	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:93)
+	at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:164)
 	at com.testngtests.salesforce.loginSalesforceApp.to_check_LoginSuccessOrNot_WithDataProvider(loginSalesforceApp.java:70)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace942804532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace942804532'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#userNavButton&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace254812619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace254812619'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#userNavButton&quot;}
   (Session info: chrome=83.0.4103.97)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-DQ25KTNT&apos;, ip: &apos;192.168.0.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=id, value=userNavButton}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -133,13 +131,11 @@ Session ID: be523cf22cbd9a02ead32eb74127aa68
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:95)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
-	at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:166)
+	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:93)
+	at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:164)
 	at com.testngtests.salesforce.loginSalesforceApp.to_check_LoginSuccessOrNot_WithDataProvider(loginSalesforceApp.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -167,8 +163,8 @@ Session ID: be523cf22cbd9a02ead32eb74127aa68
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.testngtests.salesforce.loginSalesforceApp@71318ec4</td></tr>
+<td>2</td>
+<td>com.testngtests.salesforce.loginSalesforceApp@31610302</td></tr>
 <tr>
 <td title='com.testngtests.salesforce.loginSalesforceApp.to_check_LoginSuccessOrNot_WithDataProvider()'><b>to_check_LoginSuccessOrNot_WithDataProvider</b><br>Test class: com.testngtests.salesforce.loginSalesforceApp<br>Parameters: a.gmail.com, a</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#userNavButton&quot;}
@@ -177,8 +173,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-DQ25KTNT&apos;, ip: &apos;192.168.0.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=id, value=userNavButton}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -193,23 +189,21 @@ Session ID: be523cf22cbd9a02ead32eb74127aa68
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:95)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
-	at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:166)
+	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:93)
+	at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:164)
 	at com.testngtests.salesforce.loginSalesforceApp.to_check_LoginSuccessOrNot_WithDataProvider(loginSalesforceApp.java:70)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7752890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace7752890'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#userNavButton&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1730129134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1730129134'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#userNavButton&quot;}
   (Session info: chrome=83.0.4103.97)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-DQ25KTNT&apos;, ip: &apos;192.168.0.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=id, value=userNavButton}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -228,13 +222,11 @@ Session ID: be523cf22cbd9a02ead32eb74127aa68
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:95)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
-	at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:166)
+	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:93)
+	at com.pageobjects.salesforce.pomloginSalesforceApp.checkLoginSucessOrNot(pomloginSalesforceApp.java:164)
 	at com.testngtests.salesforce.loginSalesforceApp.to_check_LoginSuccessOrNot_WithDataProvider(loginSalesforceApp.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -262,8 +254,8 @@ Session ID: be523cf22cbd9a02ead32eb74127aa68
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.testngtests.salesforce.loginSalesforceApp@71318ec4</td></tr>
+<td>1</td>
+<td>com.testngtests.salesforce.loginSalesforceApp@31610302</td></tr>
 <tr>
 <td title='com.testngtests.salesforce.loginSalesforceApp.to_login_withInvalid_Credentials()'><b>to_login_withInvalid_Credentials</b><br>Test class: com.testngtests.salesforce.loginSalesforceApp</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@id=&apos;home_Tab&apos;]//a[contains(text(),&apos;Home&apos;)]&quot;}
@@ -272,8 +264,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-DQ25KTNT&apos;, ip: &apos;192.168.0.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=xpath, value=//li[@id=&apos;home_Tab&apos;]//a[contains(text(),&apos;Home&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -288,23 +280,21 @@ Session ID: be523cf22cbd9a02ead32eb74127aa68
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:95)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
+	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:93)
 	at com.pageobjects.salesforce.pomloginSalesforceApp.invalidLoginToSalesforceApp(pomloginSalesforceApp.java:117)
 	at com.testngtests.salesforce.loginSalesforceApp.to_login_withInvalid_Credentials(loginSalesforceApp.java:43)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1765702", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1765702'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@id=&apos;home_Tab&apos;]//a[contains(text(),&apos;Home&apos;)]&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172535934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1172535934'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@id=&apos;home_Tab&apos;]//a[contains(text(),&apos;Home&apos;)]&quot;}
   (Session info: chrome=83.0.4103.97)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-DQ25KTNT&apos;, ip: &apos;192.168.0.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: be523cf22cbd9a02ead32eb74127aa68
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8028b6fbe4df5ac04d3e0fb9376e159
 *** Element info: {Using=xpath, value=//li[@id=&apos;home_Tab&apos;]//a[contains(text(),&apos;Home&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -323,12 +313,10 @@ Session ID: be523cf22cbd9a02ead32eb74127aa68
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:95)
+	at com.utilities.base.BrowserUtilities$1.apply(BrowserUtilities.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:91)
+	at com.utilities.base.BrowserUtilities.waitForPageElementToVisibleWithPollingTime(BrowserUtilities.java:93)
 	at com.pageobjects.salesforce.pomloginSalesforceApp.invalidLoginToSalesforceApp(pomloginSalesforceApp.java:117)
 	at com.testngtests.salesforce.loginSalesforceApp.to_login_withInvalid_Credentials(loginSalesforceApp.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -357,8 +345,8 @@ Session ID: be523cf22cbd9a02ead32eb74127aa68
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>com.testngtests.salesforce.loginSalesforceApp@71318ec4</td></tr>
+<td>2</td>
+<td>com.testngtests.salesforce.loginSalesforceApp@31610302</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -370,28 +358,28 @@ Session ID: be523cf22cbd9a02ead32eb74127aa68
 <tr>
 <td title='com.testngtests.salesforce.loginSalesforceApp.to_Check_Login_ErrorMessage()'><b>to_Check_Login_ErrorMessage</b><br>Test class: com.testngtests.salesforce.loginSalesforceApp</td>
 <td></td>
-<td>1</td>
-<td>com.testngtests.salesforce.loginSalesforceApp@71318ec4</td></tr>
+<td>2</td>
+<td>com.testngtests.salesforce.loginSalesforceApp@31610302</td></tr>
 <tr>
 <td title='com.testngtests.salesforce.loginSalesforceApp.to_Check_Logout_SalesforceApp()'><b>to_Check_Logout_SalesforceApp</b><br>Test class: com.testngtests.salesforce.loginSalesforceApp</td>
 <td></td>
-<td>2</td>
-<td>com.testngtests.salesforce.loginSalesforceApp@71318ec4</td></tr>
+<td>3</td>
+<td>com.testngtests.salesforce.loginSalesforceApp@31610302</td></tr>
 <tr>
 <td title='com.testngtests.salesforce.loginSalesforceApp.to_Check_RememberMe()'><b>to_Check_RememberMe</b><br>Test class: com.testngtests.salesforce.loginSalesforceApp</td>
 <td></td>
 <td>0</td>
-<td>com.testngtests.salesforce.loginSalesforceApp@71318ec4</td></tr>
+<td>com.testngtests.salesforce.loginSalesforceApp@31610302</td></tr>
 <tr>
 <td title='com.testngtests.salesforce.loginSalesforceApp.to_Login_WithValid_Credentials()'><b>to_Login_WithValid_Credentials</b><br>Test class: com.testngtests.salesforce.loginSalesforceApp</td>
 <td></td>
-<td>17</td>
-<td>com.testngtests.salesforce.loginSalesforceApp@71318ec4</td></tr>
+<td>4</td>
+<td>com.testngtests.salesforce.loginSalesforceApp@31610302</td></tr>
 <tr>
 <td title='com.testngtests.salesforce.loginSalesforceApp.to_check_LoginSuccessOrNot_WithDataProvider()'><b>to_check_LoginSuccessOrNot_WithDataProvider</b><br>Test class: com.testngtests.salesforce.loginSalesforceApp<br>Parameters: arathi.ram@salesforce.com, test@123</td>
 <td></td>
-<td>4</td>
-<td>com.testngtests.salesforce.loginSalesforceApp@71318ec4</td></tr>
+<td>6</td>
+<td>com.testngtests.salesforce.loginSalesforceApp@31610302</td></tr>
 </table><p>
 </body>
 </html>

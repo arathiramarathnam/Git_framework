@@ -21,7 +21,7 @@ public class ExtentReportsUtility {
 
 	public static ExtentReports createExtentHTMLReport() {
 		
-		String uniqueDateTime=new SimpleDateFormat("'SalesforceApp_'yyyyMMddHHmm''").format(new Date());
+		String uniqueDateTime=new SimpleDateFormat("'SalesforceApp_'yyyyMMddHHmmss.SSS''").format(new Date());
 		String sExtentReportsDir = "/ExtentReports/";
 		String sExtentReportPath=System.getProperty("user.dir") +sExtentReportsDir+ "TestNGReport_"+uniqueDateTime+".html";
 	//	extenttest.log(LogStatus.INFO, "Reports html file has been created successfully");
@@ -32,9 +32,9 @@ public class ExtentReportsUtility {
 		TakesScreenshot shot = (TakesScreenshot)TestBase.browserdriver; 
 		File sourceFile = shot.getScreenshotAs(OutputType.FILE);
 		String sScreenshotsDir="/screenshots/";
-		String uniqueDateTime=new SimpleDateFormat("'SalesforceReport_'yyyyMMddHHmm'.html'").format(new Date());
-		String imageFile = classname+uniqueDateTime+".png";
-		String sPathOfDestinationImage = System.getProperty("user.dir") +sScreenshotsDir+ "Screenshot_"+ imageFile;
+		String uniqueDateTime=new SimpleDateFormat("'SalesforceReport_'yyyyMMddHHmmss.SSS'.html'").format(new Date());
+		String sImageFile = classname+uniqueDateTime+".png";
+		String sPathOfDestinationImage = System.getProperty("user.dir") +sScreenshotsDir+ sImageFile;
 		File destFile = new File(sPathOfDestinationImage);
 		try {
 			FileUtils.copyFile(sourceFile, destFile);	
